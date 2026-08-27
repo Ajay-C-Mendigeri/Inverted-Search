@@ -25,7 +25,7 @@ void save_database(hash_t *hash_table){
 
     m_node *temp_m=hash_table[i].m_link;
     while(temp_m!=NULL){
-        fprintf(fp,"\n#;%d;%s;%d;",i,temp_m->words,temp_m->f_count);
+        fprintf(fp,"#;%d;%s;%d;",i,temp_m->words,temp_m->f_count);
         s_node *temp_s=temp_m->s_link;
         while(temp_s!=NULL){
             fprintf(fp,"%s;%d;#\n",temp_s->filename,temp_s->w_count);

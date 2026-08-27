@@ -40,7 +40,7 @@ void search_database(hash_t *hash_table)
 
             /* First file */
             if (temp_s != NULL){
-                printf("[%-2d]    %-15s %-12d %-20s %-10d\n",index,temp_m->words,temp_s->filename,temp_s->w_count);
+                printf("[%-2d]    %-15s %-12d %-20s %-10d\n",index,temp_m->words,temp_m->f_count,temp_s->filename,temp_s->w_count);
                 temp_s = temp_s->s_link;
             }
 

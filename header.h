@@ -34,4 +34,4 @@ void create_database(hash_t *hast_table,Slist_t *head);
 void display_database(hash_t *hast_table);
 void save_database(hash_t *hast_table);
 void search_database(hash_t *hast_table);
-void update_database(hash_t *hast_table);
+void update_database(hash_t *hast_table,Slist_t **head);

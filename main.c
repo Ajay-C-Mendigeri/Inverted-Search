@@ -16,6 +16,11 @@ int main(int argc, char *argv[]){
         validation(&head, argv[i]);
     }
 
+    for (int i = 0; i < 28; i++){
+        hash_table[i].index = i;
+        hash_table[i].m_link = NULL;
+    }
+
     while(1){
         printf("\n\t\t\t:::Inverted Search Project:::\n");
         printf("1.Create\n2.DIsplay\n3.Save\n4.Search\n5.Update\n");
@@ -24,11 +29,6 @@ int main(int argc, char *argv[]){
 
         switch(option){
             case 1:
-                for (int i = 0; i < 28; i++){
-                    hash_table[i].index = i;
-                    hash_table[i].m_link = NULL;
-                }
-
                 create_database(hash_table,head);
                 break;
 
@@ -45,7 +45,7 @@ int main(int argc, char *argv[]){
                 break;
 
             case 5:
-                update_database(hash_table);
+                update_database(hash_table,&head);
                 break;
 
             default:
