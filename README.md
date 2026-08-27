@@ -382,6 +382,6 @@ I learned how to use **hash tables and linked lists** together to store and sear
 
 ## Author
 
-**Inverted Search Project**
+**Ajayakumar C Mendigeri**----[GitHub](https://github.com/Ajay-C-Mendigeri)
 
 *C Programming Project*
